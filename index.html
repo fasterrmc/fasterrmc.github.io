@@ -55,7 +55,7 @@
             margin-bottom: 25px;
         }
 
-        /* Sezione Social Icons (Bianco e Nero) */
+        /* Sezione Social Icons (Bianco e Nero - Twitch & TikTok) */
         .social-links {
             display: flex;
             justify-content: center;
@@ -75,7 +75,7 @@
         .social-icon:hover {
             opacity: 1;
             transform: translateY(-4px) scale(1.1);
-            color: #00ff88; /* Glow verde al passaggio del mouse */
+            color: #00ff88;
         }
 
         /* Tasto Canale YouTube */
@@ -96,7 +96,7 @@
             transform: scale(1.05);
         }
 
-        /* Sezione Chi Sono */
+        /* Sezione Generica */
         .section {
             background: #1a1a24;
             padding: 30px;
@@ -114,6 +114,47 @@
         .section p {
             color: #cccccc;
             font-size: 1.05rem;
+        }
+
+        /* Grid per Server Discord */
+        .servers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .server-card {
+            background: #242433;
+            padding: 25px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border: 1px solid #33334d;
+            transition: all 0.3s ease;
+        }
+
+        .server-card:hover {
+            transform: translateY(-5px);
+            border-color: #00ff88;
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.15);
+        }
+
+        .server-card i {
+            font-size: 2.5rem;
+            color: #7289da;
+        }
+
+        .server-info h3 {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .server-info p {
+            font-size: 0.9rem;
+            color: #aaa;
         }
 
         /* Sezione Video */
@@ -230,11 +271,8 @@
             <h1>Ciao, sono Faster! 🎮</h1>
             <p>Developer Discord & Minecraft | Content Creator</p>
             
-            <!-- Loghi Social Bianco e Nero Cliccabili -->
+            <!-- Loghi Social Bianco e Nero (Twitch & TikTok) -->
             <div class="social-links">
-                <a href="https://www.youtube.com/@FasterrMC" target="_blank" class="social-icon" title="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
                 <a href="https://www.twitch.tv/nuplins" target="_blank" class="social-icon" title="Twitch">
                     <i class="fab fa-twitch"></i>
                 </a>
@@ -254,6 +292,31 @@
             <p>
                 Ciao! Sono <strong>Faster</strong>, un developer appassionato di sviluppo per Discord e server Minecraft, oltre che un Content Creator focalizzato sul multiplayer, principalmente su <strong>CoralMC</strong>. Amo la programmazione e passare il tempo libero giocando ai videogiochi. Il mio sogno più grande? Creare e gestire un server Minecraft con una community grande, unita e bellissima!
             </p>
+        </div>
+
+        <!-- Sezione Server Discord -->
+        <div class="section">
+            <h2>I Miei Server Discord 💬</h2>
+            <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 10px;">Clicca su uno dei server per unirti direttamente alla community!</p>
+            <div class="servers-grid">
+
+                <a href="https://discord.gg/mW5B8t9aKB" target="_blank" class="server-card">
+                    <i class="fab fa-discord"></i>
+                    <div class="server-info">
+                        <h3>Faster’s Zone</h3>
+                        <p>Entra nel server principale della community</p>
+                    </div>
+                </a>
+
+                <a href="https://discord.gg/Zr3JkzKzwu" target="_blank" class="server-card">
+                    <i class="fab fa-discord"></i>
+                    <div class="server-info">
+                        <h3>Chill Mode</h3>
+                        <p>Unisciti al server per rilassarti e chattare</p>
+                    </div>
+                </a>
+
+            </div>
         </div>
 
         <!-- Sezione Video Cliccabili -->
